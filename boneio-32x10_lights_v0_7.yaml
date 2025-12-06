@@ -43,22 +43,22 @@ packages:
         'devices_v0_7-v0_9/ina219.yaml',
         'devices_v0_7-v0_9/lm75b.yaml',
         'devices_v0_7-v0_9/mcp.yaml',
-        'boards/output/out01_02.yaml',
-        'boards/output/out03_04.yaml',
-        'boards/output/out05_06.yaml',
-        'boards/output/out07_08.yaml',
-        'boards/output/out09_10.yaml',
-        'boards/output/out11_12.yaml',
-        'boards/output/out13_14.yaml',
-        'boards/output/out15_16.yaml',
-        'boards/output/out17_18.yaml',
-        'boards/output/out19_20.yaml',
-        'boards/output/out21_22.yaml',
-        'boards/output/out23_24.yaml',
-        'boards/output/out25_26.yaml',
-        'boards/output/out27_28.yaml',
-        'boards/output/out29_30.yaml',
-        'boards/output/out31_32.yaml',
+        'boards/output_mcp/out01_02.yaml',
+        'boards/output_mcp/out03_04.yaml',
+        'boards/output_mcp/out05_06.yaml',
+        'boards/output_mcp/out07_08.yaml',
+        'boards/output_mcp/out09_10.yaml',
+        'boards/output_mcp/out11_12.yaml',
+        'boards/output_mcp/out13_14.yaml',
+        'boards/output_mcp/out15_16.yaml',
+        'boards/output_mcp/out17_18.yaml',
+        'boards/output_mcp/out19_20.yaml',
+        'boards/output_mcp/out21_22.yaml',
+        'boards/output_mcp/out23_24.yaml',
+        'boards/output_mcp/out25_26.yaml',
+        'boards/output_mcp/out27_28.yaml',
+        'boards/output_mcp/out29_30.yaml',
+        'boards/output_mcp/out31_32.yaml',
         # 'devices_v0_7-v0_9/one_wire.yaml',
       ]
 
@@ -214,7 +214,7 @@ binary_sensor:
     name: 'IN_01'
     id: in_01
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 0
       mode:
         input: true
@@ -227,7 +227,7 @@ binary_sensor:
     name: 'IN_02'
     id: in_02
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 1
       mode:
         input: true
@@ -240,7 +240,7 @@ binary_sensor:
     name: 'IN_03'
     id: in_03
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 2
       mode:
         input: true
@@ -253,7 +253,7 @@ binary_sensor:
     name: 'IN_04'
     id: in_04
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 3
       mode:
         input: true
@@ -266,7 +266,7 @@ binary_sensor:
     name: 'IN_05'
     id: in_05
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 4
       mode:
         input: true
@@ -279,7 +279,7 @@ binary_sensor:
     name: 'IN_06'
     id: in_06
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 5
       mode:
         input: true
@@ -292,7 +292,7 @@ binary_sensor:
     name: 'IN_07'
     id: in_07
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 6
       mode:
         input: true
@@ -305,7 +305,7 @@ binary_sensor:
     name: 'IN_08'
     id: in_08
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 8
       mode:
         input: true
@@ -318,7 +318,7 @@ binary_sensor:
     name: 'IN_09'
     id: in_09
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 9
       mode:
         input: true
@@ -331,7 +331,7 @@ binary_sensor:
     name: 'IN_10'
     id: in_10
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 10
       mode:
         input: true
@@ -344,7 +344,7 @@ binary_sensor:
     name: 'IN_11'
     id: in_11
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 11
       mode:
         input: true
@@ -357,7 +357,7 @@ binary_sensor:
     name: 'IN_12'
     id: in_12
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 12
       mode:
         input: true
@@ -370,7 +370,7 @@ binary_sensor:
     name: 'IN_13'
     id: in_13
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 13
       mode:
         input: true
@@ -383,7 +383,7 @@ binary_sensor:
     name: 'IN_14'
     id: in_14
     pin:
-      pcf8574: pcf_inputs_1to14
+      mcp23xxx: pcf_inputs_1to14
       number: 14
       mode:
         input: true
@@ -396,7 +396,7 @@ binary_sensor:
     name: 'IN_15'
     id: in_15
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 6
       mode:
         input: true
@@ -409,7 +409,7 @@ binary_sensor:
     name: 'IN_16'
     id: in_16
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 5
       mode:
         input: true
@@ -422,7 +422,7 @@ binary_sensor:
     name: 'IN_17'
     id: in_17
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 4
       mode:
         input: true
@@ -435,7 +435,7 @@ binary_sensor:
     name: 'IN_18'
     id: in_18
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 3
       mode:
         input: true
@@ -448,7 +448,7 @@ binary_sensor:
     name: 'IN_19'
     id: in_19
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 2
       mode:
         input: true
@@ -461,7 +461,7 @@ binary_sensor:
     name: 'IN_20'
     id: in_20
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 1
       mode:
         input: true
@@ -474,7 +474,7 @@ binary_sensor:
     name: 'IN_21'
     id: in_21
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 0
       mode:
         input: true
@@ -487,7 +487,7 @@ binary_sensor:
     name: 'IN_22'
     id: in_22
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 8
       mode:
         input: true
@@ -500,7 +500,7 @@ binary_sensor:
     name: 'IN_23'
     id: in_23
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 9
       mode:
         input: true
@@ -513,7 +513,7 @@ binary_sensor:
     name: 'IN_24'
     id: in_24
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 10
       mode:
         input: true
@@ -526,7 +526,7 @@ binary_sensor:
     name: 'IN_25'
     id: in_25
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 11
       mode:
         input: true
@@ -539,7 +539,7 @@ binary_sensor:
     name: 'IN_26'
     id: in_26
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 12
       mode:
         input: true
@@ -552,7 +552,7 @@ binary_sensor:
     name: 'IN_27'
     id: in_27
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 13
       mode:
         input: true
@@ -565,7 +565,7 @@ binary_sensor:
     name: 'IN_28'
     id: in_28
     pin:
-      pcf8574: pcf_inputs_15to28
+      mcp23xxx: pcf_inputs_15to28
       number: 14
       mode:
         input: true

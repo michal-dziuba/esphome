@@ -1,0 +1,18 @@
+output:
+  - platform: gpio
+    id: out_25
+    pin:
+      mcp23xxx: pcf_right
+      number: 0
+      mode:
+        output: true
+      inverted: true
+
+  - platform: gpio
+    id: out_26
+    pin:
+      mcp23xxx: pcf_right
+      number: 1
+      mode:
+        output: true
+      inverted: true
