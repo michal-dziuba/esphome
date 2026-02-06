@@ -34,7 +34,7 @@ dashboard_import:
 packages:
   internals_packages:
     url: https://github.com/michal-dziuba/esphome
-    ref: v1.7.1
+    ref: v0.1.0
     files: [
         'devices/buzzer.yaml',
         'devices/serial_no.yaml',
