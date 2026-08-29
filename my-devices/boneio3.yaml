@@ -6,10 +6,9 @@ substitutions:
 esphome:
   name: '${name}'
   friendly_name: '${friendly_name}'
-  name_add_mac_suffix: true
   project:
-    name: boneio.32x10-lights
-    version: '0.7'
+    name: boneio.3
+    version: '0.1.0'
 
 esp32:
   board: nodemcu-32s
