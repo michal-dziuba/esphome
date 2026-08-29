@@ -3,15 +3,16 @@ output:
     id: out_01
     pin:
       mcp23xxx: pcf_left
-      number: 15
+      number: 7
       mode:
         output: true
       inverted: true
+
   - platform: gpio
     id: out_02
     pin:
       mcp23xxx: pcf_left
-      number: 14
+      number: 6
       mode:
         output: true
       inverted: true

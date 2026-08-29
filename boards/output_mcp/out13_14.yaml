@@ -3,7 +3,7 @@ output:
     id: out_13
     pin:
       mcp23xxx: pcf_right
-      number: 11
+      number: 3
       mode:
         output: true
       inverted: true
@@ -12,7 +12,7 @@ output:
     id: out_14
     pin:
       mcp23xxx: pcf_right
-      number: 10
+      number: 2
       mode:
         output: true
       inverted: true
