@@ -9,7 +9,7 @@ sensor:
         - text_sensor.template.publish:
             id: wt32_uptime
             state: !lambda |-
-              int seconds = round(id(wt32_uptime_seconds).raw_state);
+              int seconds = round(id(wt32_uptime_seconds).get_raw_state());
               int days = seconds / (24 * 3600);
               seconds = seconds % (24 * 3600);
               int hours = seconds / 3600;
