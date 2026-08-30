@@ -3,7 +3,7 @@ switch:
     id: cover_open_14_out27
     pin:
       mcp23xxx: pcf_right
-      number: 2
+      number: 10
       mode:
         output: true
       inverted: true
@@ -15,7 +15,7 @@ switch:
     id: cover_close_14_out28
     pin:
       mcp23xxx: pcf_right
-      number: 3
+      number: 11
       mode:
         output: true
       inverted: true
