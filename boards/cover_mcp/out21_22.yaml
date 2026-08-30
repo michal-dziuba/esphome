@@ -2,7 +2,7 @@ switch:
   - platform: gpio
     id: cover_open_11_out21
     pin:
-      pcf8574: pcf_left
+      mcp23xxx: pcf_left
       number: 4
       mode:
         output: true
@@ -14,7 +14,7 @@ switch:
   - platform: gpio
     id: cover_close_11_out22
     pin:
-      pcf8574: pcf_left
+      mcp23xxx: pcf_left
       number: 5
       mode:
         output: true
