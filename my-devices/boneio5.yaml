@@ -18,7 +18,7 @@ esphome:
 
 esp32:
   board: nodemcu-32s
-  framework:                                                                            
+  framework:
     type: esp-idf
 
 ethernet:
@@ -42,42 +42,48 @@ packages:
     ref: main
     refresh: 0s
     files: [
-        'devices/buzzer.yaml',
-        'devices/serial_no.yaml',
-        'devices_v0_7/display.yaml',
-        'devices_v0_7/i2c.yaml',
-        'devices_v0_7-v0_9/ina219.yaml',
-        'devices_v0_7-v0_9/lm75b.yaml',
-        'devices_v0_7-v0_9/mcp.yaml',
-        'boards/output_mcp/out01_02.yaml',
-        'boards/output_mcp/out03_04.yaml',
-        'boards/output_mcp/out05_06.yaml',
-        'boards/output_mcp/out07_08.yaml',
-        'boards/output_mcp/out09_10.yaml',
-        'boards/output_mcp/out11_12.yaml',
-        'boards/output_mcp/out13_14.yaml',
-        'boards/output_mcp/out15_16.yaml',
-        'boards/output_mcp/out17_18.yaml',
-        'boards/output_mcp/out19_20.yaml',
-        'boards/output_mcp/out21_22.yaml',
-        'boards/output_mcp/out23_24.yaml',
-        'boards/output_mcp/out25_26.yaml',
-        'boards/output_mcp/out27_28.yaml',
-        'boards/output_mcp/out29_30.yaml',
-        'boards/output_mcp/out31_32.yaml',
-        # 'devices_v0_7-v0_9/one_wire.yaml',
-      ]
+      'devices/buzzer.yaml',
+      'devices/serial_no.yaml',
+      'devices_v0_7/display.yaml',
+      'devices_v0_7/i2c.yaml',
+      'devices_v0_7-v0_9/ina219.yaml',
+      'devices_v0_7-v0_9/lm75b.yaml',
+      'devices_v0_7-v0_9/mcp.yaml',
+      'boards/output_mcp/out01_02.yaml',
+      'boards/output_mcp/out03_04.yaml',
+      'boards/output_mcp/out05_06.yaml',
+      'boards/output_mcp/out07_08.yaml',
+      'boards/output_mcp/out09_10.yaml',
+      'boards/output_mcp/out11_12.yaml',
+      'boards/output_mcp/out13_14.yaml',
+      'boards/output_mcp/out15_16.yaml',
+      'boards/output_mcp/out17_18.yaml',
+      'boards/output_mcp/out19_20.yaml',
+      'boards/output_mcp/out21_22.yaml',
+      'boards/output_mcp/out23_24.yaml',
+      'boards/output_mcp/out25_26.yaml',
+      'boards/output_mcp/out27_28.yaml',
+      'boards/output_mcp/out29_30.yaml',
+      'boards/output_mcp/out31_32.yaml',
+      # 'devices_v0_7-v0_9/one_wire.yaml',
+    ]
 
 logger:
 api:
   reboot_timeout: 0s
+  encryption:
+    key: !secret boneio_5__encryption_key
 ota:
   - platform: esphome
+    password: !secret boneio_5__ota_password
   - platform: web_server
 
 web_server:
   port: 80
   local: true
+  auth:
+    username: smooth
+    password: !secret boneio_5__web_password
 
 time:
   - platform: homeassistant
