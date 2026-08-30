@@ -27,7 +27,7 @@ ethernet:
   power_pin: GPIO16
 
 dashboard_import:
-  package_import_url: github://michal-dziuba/esphome/my-devices/boneio3.yaml@main
+  package_import_url: github://michal-dziuba/esphome/my-devices/boneio1.yaml@main
   import_full_config: true
 
 packages:
